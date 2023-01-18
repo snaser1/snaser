@@ -1,0 +1,494 @@
+Last login: Tue Jan 17 20:45:07 on ttys000
+(base) sabreenanaser@Sabreenas-MacBook-Pro ~ % conda create --name snaser1
+Collecting package metadata (current_repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 22.9.0
+  latest version: 22.11.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+
+## Package Plan ##
+
+  environment location: /Users/sabreenanaser/opt/anaconda3/envs/snaser1
+
+
+
+Proceed ([y]/n)? y
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate snaser1
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+Retrieving notices: ...working... done
+(base) sabreenanaser@Sabreenas-MacBook-Pro ~ % conda create -n snaser1 python=3.8
+WARNING: A conda environment already exists at '/Users/sabreenanaser/opt/anaconda3/envs/snaser1'
+Remove existing environment (y/[n])? n
+
+
+CondaSystemExit: Exiting.
+
+(base) sabreenanaser@Sabreenas-MacBook-Pro ~ % conda create -n snaser1 scipy
+WARNING: A conda environment already exists at '/Users/sabreenanaser/opt/anaconda3/envs/snaser1'
+Remove existing environment (y/[n])? n
+
+
+CondaSystemExit: Exiting.
+
+(base) sabreenanaser@Sabreenas-MacBook-Pro ~ % conda create -n snaser1 scipy=1.5.0
+WARNING: A conda environment already exists at '/Users/sabreenanaser/opt/anaconda3/envs/snaser1'
+Remove existing environment (y/[n])? n
+
+
+CondaSystemExit: Exiting.
+
+(base) sabreenanaser@Sabreenas-MacBook-Pro ~ % conda create -n snaser1 python=3.7 scipy=1.5.0
+WARNING: A conda environment already exists at '/Users/sabreenanaser/opt/anaconda3/envs/snaser1'
+Remove existing environment (y/[n])? n
+
+
+CondaSystemExit: Exiting.
+
+(base) sabreenanaser@Sabreenas-MacBook-Pro ~ % conda activate snaser1
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % conda list -e > requirements.txt
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % vi make_tree.sh
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % nano conf.txt
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % cp text_chunk1.txt
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-aclpsvXx] source_file ... target_directory
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % cp text_chunk1.txt text_chunk2.txt
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % less text_chunk2.txt
+
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % echo "I like them because they help me organize my packages much better" >> text_chunk2.txt
+
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % less text_chunk2.txt
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % sh make_tree.sh
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % chmod +x make_tree.sh
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % ./make_tree.sh
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % bash ./make_tree.sh
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % vi make_tree.sh
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % less make_tree.sh
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % echo "virtual conda environments are my favorite new technology" >> make_tree.sh
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % less make_tree.sh
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % less text_chunk2.txt
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % echo "virtual environmemts are good for keeping dependencies seperated by project allowing you to use 
+different versions of python
+I like them because they help me organize my packages much better" >> make_tree.sh
+
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % chmod +x make_tree.sh
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % sh make_tree.sh
+make_tree.sh: line 2: virtual: command not found
+make_tree.sh: line 3: virtual: command not found
+make_tree.sh: line 4: different: command not found
+make_tree.sh: line 5: I: command not found
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % vim make_tree.sh
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % source ~/.make_tree.sh
+source: no such file or directory: /Users/sabreenanaser/.make_tree.sh
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % sh make_tree.sh
+make_tree.sh: line 3: virtual: command not found
+make_tree.sh: line 4: virtual: command not found
+make_tree.sh: line 5: different: command not found
+make_tree.sh: line 6: I: command not found
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % git init -b main
+Initialized empty Git repository in /Users/sabreenanaser/.git/
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % git init && git symbolic-ref HEAD refs/heads/main
+Reinitialized existing Git repository in /Users/sabreenanaser/.git/
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % git add .
+warning: could not open directory 'Library/Application Support/CallHistoryTransactions/': Operation not permitted
+warning: could not open directory 'Library/Application Support/CloudDocs/session/db/': Operation not permitted
+warning: could not open directory 'Library/Application Support/com.apple.sharedfilelist/': Operation not permitted
+warning: could not open directory 'Library/Application Support/Knowledge/': Operation not permitted
+warning: could not open directory 'Library/Application Support/com.apple.TCC/': Operation not permitted
+warning: could not open directory 'Library/Application Support/FileProvider/': Operation not permitted
+warning: could not open directory 'Library/Application Support/AddressBook/': Operation not permitted
+warning: could not open directory 'Library/Application Support/CallHistoryDB/': Operation not permitted
+warning: could not open directory 'Library/Assistant/SiriVocabulary/': Operation not permitted
+warning: could not open directory 'Library/Autosave Information/': Operation not permitted
+warning: could not open directory 'Library/IdentityServices/': Operation not permitted
+warning: could not open directory 'Library/Messages/': Operation not permitted
+warning: could not open directory 'Library/HomeKit/': Operation not permitted
+warning: could not open directory 'Library/Sharing/': Operation not permitted
+warning: could not open directory 'Library/Mail/': Operation not permitted
+warning: could not open directory 'Library/Accounts/': Operation not permitted
+warning: could not open directory 'Library/Safari/': Operation not permitted
+warning: could not open directory 'Library/Biome/': Operation not permitted
+warning: could not open directory 'Library/Shortcuts/': Operation not permitted
+warning: could not open directory 'Library/Suggestions/': Operation not permitted
+warning: could not open directory 'Library/Group Containers/group.com.apple.secure-control-center-preferences/': Operation not permitted
+warning: could not open directory 'Library/Group Containers/group.com.apple.notes/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.Safari/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.CloudDocs.MobileDocumentsFileProvider/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.mail/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.Notes/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.news/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.corerecents.recentsd/Data/Library/Recents/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.stocks/': Operation not permitted
+warning: could not open directory 'Library/PersonalizationPortrait/': Operation not permitted
+warning: could not open directory 'Library/Metadata/CoreSpotlight/': Operation not permitted
+warning: could not open directory 'Library/Reminders/': Operation not permitted
+warning: could not open directory 'Library/Cookies/': Operation not permitted
+warning: could not open directory 'Library/CoreFollowUp/': Operation not permitted
+warning: could not open directory 'Library/StatusKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.HomeKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/CloudKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/FamilyCircle/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.homed/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.ap.adprivacyd/': Operation not permitted
+warning: could not open directory '.Trash/': Operation not permitted
+error: open("Library/Preferences/com.apple.AddressBook.plist"): Operation not permitted
+error: unable to index file 'Library/Preferences/com.apple.AddressBook.plist'
+fatal: adding files failed
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % git add .
+warning: could not open directory 'Library/Application Support/CallHistoryTransactions/': Operation not permitted
+warning: could not open directory 'Library/Application Support/CloudDocs/session/db/': Operation not permitted
+warning: could not open directory 'Library/Application Support/com.apple.sharedfilelist/': Operation not permitted
+warning: could not open directory 'Library/Application Support/Knowledge/': Operation not permitted
+warning: could not open directory 'Library/Application Support/com.apple.TCC/': Operation not permitted
+warning: could not open directory 'Library/Application Support/FileProvider/': Operation not permitted
+warning: could not open directory 'Library/Application Support/AddressBook/': Operation not permitted
+warning: could not open directory 'Library/Application Support/CallHistoryDB/': Operation not permitted
+warning: could not open directory 'Library/Assistant/SiriVocabulary/': Operation not permitted
+warning: could not open directory 'Library/Autosave Information/': Operation not permitted
+warning: could not open directory 'Library/IdentityServices/': Operation not permitted
+warning: could not open directory 'Library/Messages/': Operation not permitted
+warning: could not open directory 'Library/HomeKit/': Operation not permitted
+warning: could not open directory 'Library/Sharing/': Operation not permitted
+warning: could not open directory 'Library/Mail/': Operation not permitted
+warning: could not open directory 'Library/Accounts/': Operation not permitted
+warning: could not open directory 'Library/Safari/': Operation not permitted
+warning: could not open directory 'Library/Biome/': Operation not permitted
+warning: could not open directory 'Library/Shortcuts/': Operation not permitted
+warning: could not open directory 'Library/Suggestions/': Operation not permitted
+warning: could not open directory 'Library/Group Containers/group.com.apple.secure-control-center-preferences/': Operation not permitted
+warning: could not open directory 'Library/Group Containers/group.com.apple.notes/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.Safari/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.CloudDocs.MobileDocumentsFileProvider/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.mail/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.Notes/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.news/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.corerecents.recentsd/Data/Library/Recents/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.stocks/': Operation not permitted
+warning: could not open directory 'Library/PersonalizationPortrait/': Operation not permitted
+warning: could not open directory 'Library/Metadata/CoreSpotlight/': Operation not permitted
+warning: could not open directory 'Library/Reminders/': Operation not permitted
+warning: could not open directory 'Library/Cookies/': Operation not permitted
+warning: could not open directory 'Library/CoreFollowUp/': Operation not permitted
+warning: could not open directory 'Library/StatusKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.HomeKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/CloudKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/FamilyCircle/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.homed/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.ap.adprivacyd/': Operation not permitted
+warning: could not open directory '.Trash/': Operation not permitted
+error: open("Library/Preferences/com.apple.AddressBook.plist"): Operation not permitted
+error: unable to index file 'Library/Preferences/com.apple.AddressBook.plist'
+fatal: adding files failed
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % git init
+Reinitialized existing Git repository in /Users/sabreenanaser/.git/
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % git add .
+warning: could not open directory 'Library/Application Support/CallHistoryTransactions/': Operation not permitted
+warning: could not open directory 'Library/Application Support/CloudDocs/session/db/': Operation not permitted
+warning: could not open directory 'Library/Application Support/com.apple.sharedfilelist/': Operation not permitted
+warning: could not open directory 'Library/Application Support/Knowledge/': Operation not permitted
+warning: could not open directory 'Library/Application Support/com.apple.TCC/': Operation not permitted
+warning: could not open directory 'Library/Application Support/FileProvider/': Operation not permitted
+warning: could not open directory 'Library/Application Support/AddressBook/': Operation not permitted
+warning: could not open directory 'Library/Application Support/CallHistoryDB/': Operation not permitted
+warning: could not open directory 'Library/Assistant/SiriVocabulary/': Operation not permitted
+warning: could not open directory 'Library/Autosave Information/': Operation not permitted
+warning: could not open directory 'Library/IdentityServices/': Operation not permitted
+warning: could not open directory 'Library/Messages/': Operation not permitted
+warning: could not open directory 'Library/HomeKit/': Operation not permitted
+warning: could not open directory 'Library/Sharing/': Operation not permitted
+warning: could not open directory 'Library/Mail/': Operation not permitted
+warning: could not open directory 'Library/Accounts/': Operation not permitted
+warning: could not open directory 'Library/Safari/': Operation not permitted
+warning: could not open directory 'Library/Biome/': Operation not permitted
+warning: could not open directory 'Library/Shortcuts/': Operation not permitted
+warning: could not open directory 'Library/Suggestions/': Operation not permitted
+warning: could not open directory 'Library/Group Containers/group.com.apple.secure-control-center-preferences/': Operation not permitted
+warning: could not open directory 'Library/Group Containers/group.com.apple.notes/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.Safari/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.CloudDocs.MobileDocumentsFileProvider/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.mail/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.Notes/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.news/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.corerecents.recentsd/Data/Library/Recents/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.stocks/': Operation not permitted
+warning: could not open directory 'Library/PersonalizationPortrait/': Operation not permitted
+warning: could not open directory 'Library/Metadata/CoreSpotlight/': Operation not permitted
+warning: could not open directory 'Library/Reminders/': Operation not permitted
+warning: could not open directory 'Library/Cookies/': Operation not permitted
+warning: could not open directory 'Library/CoreFollowUp/': Operation not permitted
+warning: could not open directory 'Library/StatusKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.HomeKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/CloudKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/FamilyCircle/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.homed/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.ap.adprivacyd/': Operation not permitted
+warning: could not open directory '.Trash/': Operation not permitted
+error: open("Library/Preferences/com.apple.AddressBook.plist"): Operation not permitted
+error: unable to index file 'Library/Preferences/com.apple.AddressBook.plist'
+fatal: adding files failed
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % echo "virtual environmemts are good for keeping dependencies seperated by project allowing you to use 
+different versions of python
+I like them because they help me organize my packages much better"                
+virtual environmemts are good for keeping dependencies seperated by project allowing you to use 
+different versions of python
+I like them because they help me organize my packages much better
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % git -C ~ config status.showuntrackedfiles no
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % git init
+Reinitialized existing Git repository in /Users/sabreenanaser/.git/
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % git add .
+warning: could not open directory 'Library/Application Support/CallHistoryTransactions/': Operation not permitted
+warning: could not open directory 'Library/Application Support/CloudDocs/session/db/': Operation not permitted
+warning: could not open directory 'Library/Application Support/com.apple.sharedfilelist/': Operation not permitted
+warning: could not open directory 'Library/Application Support/Knowledge/': Operation not permitted
+warning: could not open directory 'Library/Application Support/com.apple.TCC/': Operation not permitted
+warning: could not open directory 'Library/Application Support/FileProvider/': Operation not permitted
+warning: could not open directory 'Library/Application Support/AddressBook/': Operation not permitted
+warning: could not open directory 'Library/Application Support/CallHistoryDB/': Operation not permitted
+warning: could not open directory 'Library/Assistant/SiriVocabulary/': Operation not permitted
+warning: could not open directory 'Library/Autosave Information/': Operation not permitted
+warning: could not open directory 'Library/IdentityServices/': Operation not permitted
+warning: could not open directory 'Library/Messages/': Operation not permitted
+warning: could not open directory 'Library/HomeKit/': Operation not permitted
+warning: could not open directory 'Library/Sharing/': Operation not permitted
+warning: could not open directory 'Library/Mail/': Operation not permitted
+warning: could not open directory 'Library/Accounts/': Operation not permitted
+warning: could not open directory 'Library/Safari/': Operation not permitted
+warning: could not open directory 'Library/Biome/': Operation not permitted
+warning: could not open directory 'Library/Shortcuts/': Operation not permitted
+warning: could not open directory 'Library/Suggestions/': Operation not permitted
+warning: could not open directory 'Library/Group Containers/group.com.apple.secure-control-center-preferences/': Operation not permitted
+warning: could not open directory 'Library/Group Containers/group.com.apple.notes/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.Safari/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.CloudDocs.MobileDocumentsFileProvider/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.mail/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.Notes/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.news/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.corerecents.recentsd/Data/Library/Recents/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.stocks/': Operation not permitted
+warning: could not open directory 'Library/PersonalizationPortrait/': Operation not permitted
+warning: could not open directory 'Library/Metadata/CoreSpotlight/': Operation not permitted
+warning: could not open directory 'Library/Reminders/': Operation not permitted
+warning: could not open directory 'Library/Cookies/': Operation not permitted
+warning: could not open directory 'Library/CoreFollowUp/': Operation not permitted
+warning: could not open directory 'Library/StatusKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.HomeKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/CloudKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/FamilyCircle/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.homed/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.ap.adprivacyd/': Operation not permitted
+warning: could not open directory '.Trash/': Operation not permitted
+error: open("Library/Preferences/com.apple.AddressBook.plist"): Operation not permitted
+error: unable to index file 'Library/Preferences/com.apple.AddressBook.plist'
+fatal: adding files failed
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % git init
+Reinitialized existing Git repository in /Users/sabreenanaser/.git/
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % git add .
+warning: could not open directory 'Library/Application Support/CallHistoryTransactions/': Operation not permitted
+warning: could not open directory 'Library/Application Support/CloudDocs/session/db/': Operation not permitted
+warning: could not open directory 'Library/Application Support/com.apple.sharedfilelist/': Operation not permitted
+warning: could not open directory 'Library/Application Support/Knowledge/': Operation not permitted
+warning: could not open directory 'Library/Application Support/com.apple.TCC/': Operation not permitted
+warning: could not open directory 'Library/Application Support/FileProvider/': Operation not permitted
+warning: could not open directory 'Library/Application Support/AddressBook/': Operation not permitted
+warning: could not open directory 'Library/Application Support/CallHistoryDB/': Operation not permitted
+warning: could not open directory 'Library/Assistant/SiriVocabulary/': Operation not permitted
+warning: could not open directory 'Library/Autosave Information/': Operation not permitted
+warning: could not open directory 'Library/IdentityServices/': Operation not permitted
+warning: could not open directory 'Library/Messages/': Operation not permitted
+warning: could not open directory 'Library/HomeKit/': Operation not permitted
+warning: could not open directory 'Library/Sharing/': Operation not permitted
+warning: could not open directory 'Library/Mail/': Operation not permitted
+warning: could not open directory 'Library/Accounts/': Operation not permitted
+warning: could not open directory 'Library/Safari/': Operation not permitted
+warning: could not open directory 'Library/Biome/': Operation not permitted
+warning: could not open directory 'Library/Shortcuts/': Operation not permitted
+warning: could not open directory 'Library/Suggestions/': Operation not permitted
+warning: could not open directory 'Library/Group Containers/group.com.apple.secure-control-center-preferences/': Operation not permitted
+warning: could not open directory 'Library/Group Containers/group.com.apple.notes/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.Safari/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.CloudDocs.MobileDocumentsFileProvider/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.mail/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.Notes/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.news/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.corerecents.recentsd/Data/Library/Recents/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.stocks/': Operation not permitted
+warning: could not open directory 'Library/PersonalizationPortrait/': Operation not permitted
+warning: could not open directory 'Library/Metadata/CoreSpotlight/': Operation not permitted
+warning: could not open directory 'Library/Reminders/': Operation not permitted
+warning: could not open directory 'Library/Cookies/': Operation not permitted
+warning: could not open directory 'Library/CoreFollowUp/': Operation not permitted
+warning: could not open directory 'Library/StatusKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.HomeKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/CloudKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/FamilyCircle/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.homed/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.ap.adprivacyd/': Operation not permitted
+warning: could not open directory '.Trash/': Operation not permitted
+error: open("Library/Preferences/com.apple.AddressBook.plist"): Operation not permitted
+error: unable to index file 'Library/Preferences/com.apple.AddressBook.plist'
+fatal: adding files failed
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % git -C ~ config status.showuntrackedfiles no
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % 
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % 
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % 
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % git commit -m "first commit"
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % git add .
+warning: could not open directory 'Library/Application Support/CallHistoryTransactions/': Operation not permitted
+warning: could not open directory 'Library/Application Support/CloudDocs/session/db/': Operation not permitted
+warning: could not open directory 'Library/Application Support/com.apple.sharedfilelist/': Operation not permitted
+warning: could not open directory 'Library/Application Support/Knowledge/': Operation not permitted
+warning: could not open directory 'Library/Application Support/com.apple.TCC/': Operation not permitted
+warning: could not open directory 'Library/Application Support/FileProvider/': Operation not permitted
+warning: could not open directory 'Library/Application Support/AddressBook/': Operation not permitted
+warning: could not open directory 'Library/Application Support/CallHistoryDB/': Operation not permitted
+warning: could not open directory 'Library/Assistant/SiriVocabulary/': Operation not permitted
+warning: could not open directory 'Library/Autosave Information/': Operation not permitted
+warning: could not open directory 'Library/IdentityServices/': Operation not permitted
+warning: could not open directory 'Library/Messages/': Operation not permitted
+warning: could not open directory 'Library/HomeKit/': Operation not permitted
+warning: could not open directory 'Library/Sharing/': Operation not permitted
+warning: could not open directory 'Library/Mail/': Operation not permitted
+warning: could not open directory 'Library/Accounts/': Operation not permitted
+warning: could not open directory 'Library/Safari/': Operation not permitted
+warning: could not open directory 'Library/Biome/': Operation not permitted
+warning: could not open directory 'Library/Shortcuts/': Operation not permitted
+warning: could not open directory 'Library/Suggestions/': Operation not permitted
+warning: could not open directory 'Library/Group Containers/group.com.apple.secure-control-center-preferences/': Operation not permitted
+warning: could not open directory 'Library/Group Containers/group.com.apple.notes/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.Safari/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.CloudDocs.MobileDocumentsFileProvider/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.mail/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.Notes/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.news/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.corerecents.recentsd/Data/Library/Recents/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.stocks/': Operation not permitted
+warning: could not open directory 'Library/PersonalizationPortrait/': Operation not permitted
+warning: could not open directory 'Library/Metadata/CoreSpotlight/': Operation not permitted
+warning: could not open directory 'Library/Reminders/': Operation not permitted
+warning: could not open directory 'Library/Cookies/': Operation not permitted
+warning: could not open directory 'Library/CoreFollowUp/': Operation not permitted
+warning: could not open directory 'Library/StatusKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.HomeKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/CloudKit/': Operation not permitted
+warning: could not open directory 'Library/Caches/FamilyCircle/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.homed/': Operation not permitted
+warning: could not open directory 'Library/Caches/com.apple.ap.adprivacyd/': Operation not permitted
+warning: could not open directory '.Trash/': Operation not permitted
+error: open("Library/Preferences/com.apple.AddressBook.plist"): Operation not permitted
+error: unable to index file 'Library/Preferences/com.apple.AddressBook.plist'
+fatal: adding files failed
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % echo "# snaser1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/UC-Berkeley-I-School/snaser1.git
+git push -u origin main
+Reinitialized existing Git repository in /Users/sabreenanaser/.git/
+[main (root-commit) 03ed6d3] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+Username for 'https://github.com': snaser1
+Password for 'https://snaser1@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/UC-Berkeley-I-School/snaser1.git/'
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % echo "# snaser1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/UC-Berkeley-I-School/snaser1.git
+git push -u origin main
+Reinitialized existing Git repository in /Users/sabreenanaser/.git/
+[main f72bfa4] first commit
+ 1 file changed, 1 insertion(+)
+error: remote origin already exists.
+Username for 'https://github.com': snaser1
+Password for 'https://snaser1@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/UC-Berkeley-I-School/snaser1.git/'
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % echo "# snaser1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/UC-Berkeley-I-School/snaser1.git
+git push -u origin main
+Reinitialized existing Git repository in /Users/sabreenanaser/.git/
+[main 1006557] first commit
+ 1 file changed, 1 insertion(+)
+error: remote origin already exists.
+Username for 'https://github.com': snaser1
+Password for 'https://snaser1@github.com': 
+remote: Permission to UC-Berkeley-I-School/snaser1.git denied to snaser1.
+fatal: unable to access 'https://github.com/UC-Berkeley-I-School/snaser1.git/': The requested URL returned error: 403
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % echo "# snaser1" >>                  
+git init
+git add .        
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/UC-Berkeley-I-School/snaser1.git
+git push -u origin main
+zsh: parse error near `\n'
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % echo "# snaser1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/UC-Berkeley-I-School/snaser1.git
+git push -u origin main
+Reinitialized existing Git repository in /Users/sabreenanaser/.git/
+[main 76f6c3e] first commit
+ 1 file changed, 1 insertion(+)
+error: remote origin already exists.
+Username for 'https://github.com': snaser1
+Password for 'https://snaser1@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/UC-Berkeley-I-School/snaser1.git/'
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % echo "# snaser1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:UC-Berkeley-I-School/snaser1.git
+git push -u origin main
+Reinitialized existing Git repository in /Users/sabreenanaser/.git/
+[main e25e91b] first commit
+ 1 file changed, 1 insertion(+)
+error: remote origin already exists.
+Username for 'https://github.com': snaser1
+Password for 'https://snaser1@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/UC-Berkeley-I-School/snaser1.git/'
+(snaser1) sabreenanaser@Sabreenas-MacBook-Pro ~ % 
