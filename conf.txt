@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "virtual (conda) environments are my favorite new technology"
+

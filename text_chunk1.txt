@@ -1,0 +1,2 @@
+echo virtual environmemts are good for keeping dependencies seperated by project allowing you to use 
+different versions of python
