@@ -1,0 +1,31 @@
+# Potential Outcomes and Treatment Effects 
+
+```{r, include = FALSE}
+library(data.table)
+table <- data.table(
+  subject = 1:7, 
+  y_0 = c(10, 12, 15, 11, 10, 17, 16), 
+  y_1 = c(12, 12, 18, 14, 15, 18, 16),
+  tau = c(2, 0, 3, 3, 5, 1, 0)
+)
+```
+
+## Illustration
+Use the values in the table below to illustrate that $E[Y_i(1)]-E[Y_i(0)] = E[Y_i(1) - Y_i(0)]$.  
+
+```{r, include = TRUE}
+
+E_Y1 <- mean(table$y_1)
+E_Y0 <- mean(table$y_0)
+E_Y1_minus_Y0 <- mean(table$tau)
+print(E_Y1_minus_Y0, E_Y1 - E_Y0)
+
+```
+
+**Answer:** ...
+
+## Data Possibilities
+Is it possible to collect all necessary values and construct a table like the one provided in real life? Explain why or why not?  
+
+**Answer:** ...
+In real life, it is generally not possible to construct a table like the one provided with both potential outcomes \( Y_i(1) \) and \( Y_i(0) \) for each subject, due to the fundamental problem of causal inference. This problem arises because, in practice, we can only observe one of the potential outcomes for each subject (either the outcome with the treatment or without it), but not both. This limitation is known as the counterfactual problem. Therefore, while such tables are useful in theoretical and educational contexts, they are not typically feasible in real-world studies or experiments.

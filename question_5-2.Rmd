@@ -1,0 +1,37 @@
+# Moral Panic 
+
+```{problem_description}
+Suppose that a researcher finds that high school students who listen to death metal music at least once per week are more likely to perform badly on standardized test. :metal: As a consequence, the researcher writes an opinion piece in which she recommends parents to keep their kids away from "dangerous, satanic music". 
+
+- Let the potential outcomes to control, $Y_i(0)$, be each students test score when listening to death metal at least one time per week. 
+- Let $Y_i(1)$ be the test score when listening to death metal less than one time per week. 
+```
+
+## Explain the statements
+Explain the statement $E[Y_i(0)|D_i=0] = E[Y_i(0)|D_i=1]$ in words. First, state the rote English language translation. Second, tell us the *meaning* of this statement. A full points solution will use the term "potential outcomes" twice. 
+
+**Answer:** ...
+
+```
+
+The statement \( E[Y_i(0)|D_i=0] = E[Y_i(0)|D_i=1] \) means "The expected value of the potential outcomes for test scores, assuming students do not listen to death metal at least once per week, is the same for both students who actually don't listen to death metal at least once per week and for those who do."
+
+
+This statement posits an equivalence in the expected potential outcomes for test scores under a specific condition (not listening to death metal at least once per week), regardless of the students' actual behavior regarding listening to death metal.
+
+ \( Y_i(0) \) represents the potential outcomes for students' test scores if they were not to listen to death metal at least once per week.
+
+
+   - \( E[Y_i(0)|D_i=0] \): The average of these potential outcomes for students who actually do not listen to death metal.
+   - \( E[Y_i(0)|D_i=1] \): The average of these same potential outcomes, but for students who do listen to death metal.
+
+The statement asserts that the average potential test scores, in the absence of listening to death metal, are identical irrespective of whether students actually listen to death metal or not. This implies that the act of listening to death metal itself does not influence these potential outcomes.
+```
+
+## Can you believe it
+Do you expect that this circumstance actually matches with the meaning that you've just written down? Why or why not?  
+
+**Answer:** ...
+```{}
+The statement \( E[Y_i(0)|D_i=0] = E[Y_i(0)|D_i=1] \) likely does not reflect reality in the context of death metal music's impact on students' test scores. This is primarily due to the presence of confounding variables that can affect both music preferences and academic performance, making it difficult to establish a causal relationship. Additionally, individual differences among students and the challenge of ensuring comparable groups in observational studies further complicate the validity of this assumption in a real-world setting.
+```
